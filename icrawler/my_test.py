@@ -8,13 +8,13 @@ num = 500
 num_threads = 8
 
 google_crawler = GoogleImageCrawler('data/google')
-google_crawler.crawl(keyword='daesh flag', offset=0, max_num=num,
+google_crawler.crawl(keyword='isis flag', offset=0, max_num=num,
                      date_min=None, date_max=None, feeder_thr_num=1,
                      parser_thr_num=1, downloader_thr_num=num_threads,
                      min_size=(200,200), max_size=None)
 
 bing_crawler = BingImageCrawler('data/bing')
-bing_crawler.crawl(keyword='daesh flag', offset=0, max_num=num,
+bing_crawler.crawl(keyword='isis flag', offset=0, max_num=num,
                    feeder_thr_num=1, parser_thr_num=1, downloader_thr_num=num_threads,
                    min_size=None, max_size=None)
 
